@@ -24,4 +24,4 @@ When we add that argument everything is in the folder was having issues.
 
 But we did learn that the way of setting this up in AWS is MUCH different than GCP.
 
-
+Lastly the request to have New York as a zone. We did found out from our research that new you does have az AZ nestled inside of North Virgina but you currently allowed to launch instances there.
