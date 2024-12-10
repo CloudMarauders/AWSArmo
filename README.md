@@ -1,4 +1,4 @@
-Hello this is our submissive.
+Hello this is our submission.
 
 We where able to get everything up and running but we did come across and error with getting the VPC peering to connect via Terraform. Sadly we had to do this via the console.
 
