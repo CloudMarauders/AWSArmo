@@ -47,6 +47,7 @@ We did encounter a few issues that should be brought up to the client. The instr
 1. AZ containing syslog data must be limited to a private subnet. Limited means this AZ CANNOT have a Public Subnet.
   This can only be done in the N.VA region as it has 6 AZ's. Tokyo shows 4,  but currently only 3 are available. The remainder of the regions have only 2-3 AZs.
   We are attaching photos and a link to the AWS resources to confirm. We would advise that we make some changes to the architecture.
+######################################################################################################################
 ![Screenshot 2025-01-06 at 7 04 27 PM](https://github.com/user-attachments/assets/fcfc57e8-29f0-4ced-8cb6-80234bd151ca)
 ![Screenshot 2025-01-06 at 7 04 46 PM](https://github.com/user-attachments/assets/fbc452be-00b1-4f06-9c9c-49e48aefaa54)
 ![Screenshot 2025-01-06 at 7 05 13 PM](https://github.com/user-attachments/assets/9afb6675-e7df-48f8-a484-6236c64e98e9)
@@ -61,7 +62,7 @@ https://aws.amazon.com/about-aws/global-infrastructure/
     This falls into the same restraints as above based off the requirements because in order to make a DB in Terraform an "aws_db_subnet_group" resource block in order to put it in a desired VPC. This argument requires 2 subnets (It     
     wouldnt be wise to put it in the same AZ). If this argument is not used, it will be created in the DEFAULT VPC, which is a security and compliance issue.
 
-
+#######################################################################################################################
 ![Screenshot 2025-01-06 at 7 19 48 PM](https://github.com/user-attachments/assets/8dd0d15c-13c8-4a59-b48e-52a2bb1668f0)
 ![Screenshot 2025-01-06 at 7 20 26 PM](https://github.com/user-attachments/assets/cf98148b-4450-4431-be02-5123033ac02e)
 ![Screenshot 2025-01-06 at 7 20 44 PM](https://github.com/user-attachments/assets/453fcef9-7c66-47b4-a9b2-71fcfbd7975f)
